@@ -1,0 +1,264 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+  font-family: 'Rubik', sans-serif;
+  font-weight: 50;
+ }
+
+/*            NAVIGATION BAR CSS                    */
+
+#navigationBar{
+  background-color: none;
+  color:white;
+  margin: 3% 7% ;
+}
+
+#brand{
+  color: white!important;
+  font-size: 2em;
+}
+
+#brand:hover{
+  box-shadow: 2px 2px 2px white;
+  transition: box-shadow 0.3s ease-in;
+}
+
+#myNavbar a{
+  color:white!important;
+  margin-right: 5px;
+  font-size: 1.2em;
+}
+
+#myNavbar a:hover{
+  background-color: transparent;
+  box-shadow: 0px 2.5px 0px white;
+  transition: box-shadow 0.3s ease-in;
+}
+
+.scrolledNav{
+  border: solid 0.7px white!important;
+  background-color: rgba(0, 0, 0,0.5)!important;
+}
+
+/*            COVER CSS                    */
+
+ #firstPage{
+   background-image: url("../img/Kehidupan-Seorang-Pembelajar-715x400.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-attachment: fixed;
+   width: auto;
+   height: 676px;
+   margin: 0;
+}
+
+#introText{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  font-size: 3.5em;
+  line-height: 0.5em;
+  text-align: center;
+  color:white;
+}
+
+.fa{
+  color: white;
+}
+
+.fa:hover{
+  color: inherit;
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+/*            ABOUT SECTION CSS                    */
+
+#about{
+  background-color: #5B2E24;
+  position: relative;
+  text-align: center;
+  height: 250px;
+  margin-top: 250px;
+  margin-bottom: 50px;
+}
+
+#aboutText{
+  position: absolute;
+  width: 80%;
+  top:50%;
+  left: 50%;
+  padding-bottom: 50px;
+  transform: translate(-50%,-50%);
+  font-size: 1.2em;
+  color:white;
+}
+
+#aboutText h1{
+  line-height: 3em;
+}
+
+/*            POSTS CSS                    */
+
+#recentPosts{
+  margin: 100px auto;
+  padding: 50px;
+}
+
+#recentPosts h1{
+  margin: 60px auto;
+}
+
+.parent {
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    position: relative;
+  	cursor: pointer;
+    margin: 0 auto;
+}
+
+.child {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all .5s;
+}
+
+
+/*            IMAGES TO DISPLAY CSS                    */
+.bgOne {background-image: url(http://cdn-images.threadless.com/threadless-shop/products/5377/1272x920design_01.jpg);}
+.bgTwo {background-image: url(https://wallpaperscraft.com/image/breaking_bad_series_protection_mask_glasses_art_drawing_95922_1366x768.jpg);}
+.bgThree {background-image: url(https://i.imgur.com/xWSrIjs.jpg);}
+
+
+.parent a {
+    display: none;
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+
+.parent:hover .child, .parent:focus .child {
+    transform: scale(1.2);
+}
+
+.parent:hover .child:before, .parent:focus .child:before {
+    display: block;
+}
+
+.parent:hover a, .parent:focus a {
+    display: block;
+    color:white;
+    text-decoration: none;
+}
+
+.child:before {
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
+}
+
+/*            SUBSCRIBE FORM CSS                    */
+
+#subscribe{
+  text-align: center;
+  margin: 250px auto;
+}
+
+#subscribe input{
+  margin-top: 15px;
+  height: auto;
+  width: 60%;
+  text-align: center;
+  font-size: 1.6em;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid 1px inherit;
+}
+
+#subscribe input:focus{
+  outline: none;
+}
+
+#subscribe input:hover{
+  animation: borderTransition 1s forwards;
+}
+
+#subscribe button{
+  background-color: transparent;
+  font-size: 1.2em;
+  margin: 25px 10px;
+  padding: 5px 25px;
+  border: solid 1px black;
+
+
+}
+
+#subscribe button:hover{
+  animation: bgChange 0.8s forwards;
+  z-index: 0;
+}
+
+@keyframes bgChange{
+  100%{
+        background-color: black;
+        color:white;
+     }
+}
+
+@keyframes borderTransition {
+   100%{
+     border-bottom: solid 1px black;
+   }
+}
+
+/*            CONTACT CSS                    */
+
+#contact{
+  text-align: center;
+  margin: 300px auto;
+}
+.glyphicon{
+  font-size: 3em;
+  margin: 15px auto;
+}
+#phone,#mail{
+  font-size: 2em;
+}
+
+.moveUp{
+    animation: move 1s linear;
+}
+
+@keyframes move{
+    to {top:-20px;}
+}
+
+/*            FOOTER CSS                    */
+
+footer{
+  background-color: rgba(0,0,0,0.7);
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+  margin: 0;
+  line-height: 2em;
+  vertical-align: middle;
+}
