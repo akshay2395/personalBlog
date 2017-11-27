@@ -262,3 +262,24 @@ footer{
   line-height: 2em;
   vertical-align: middle;
 }
+
+/* MObile settings */
+
+@media only screen and (max-width: 768px) {
+  #brand{
+      font-size: 1.8em;
+  }
+  #aboutText{
+      font-size: 0.8em;
+  }
+  #aboutText h1{
+    line-height: 2em;
+  }
+  .icon-bar{
+    border: solid 1px white;
+  }
+  footer{
+    font-size: 0.9em;
+  }
+}
+
